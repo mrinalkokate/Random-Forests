@@ -16,3 +16,10 @@ Random Forest offers several advantages:
   - <sub>Underfitting: Underfitting occurs when a machine learning model is too simple to capture the underlying structure of the data, resulting in poor performance on both the training and test data. </sub>
 
 - <sub><b>Feature Importance:</b> Random Forest provides a measure of feature importance, indicating which features are most influential in making predictions.</sub>
+
+<p align="center">
+DATA PREPARATION FOR RANDOM FOREST <br/>
+<sub>Data Preparation for Random Forest: In this case we are trying to Identify whether an Employee will Leave or Stay in the Firm.</sub>
+<img src="https://i.imgur.com/CJeg6Rx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+
