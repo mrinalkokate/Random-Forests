@@ -23,3 +23,56 @@ DATA PREPARATION FOR RANDOM FOREST <br/>
 <img src="https://i.imgur.com/CJeg6Rx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 
+<sub>Random Forest is widely used in various applications, including but not limited to, classification, regression, feature selection, and outlier detection. Its versatility, robustness, and ease of use make it a popular choice for both beginners and experienced practitioners in the field of machine learning.</sub>
+
+Ensemble
+
+<sub>Multiple Models: Ensemble methods create several individual models, each trained on different subsets of the data or using different algorithms.
+
+<sub>Combining Predictions: Once the individual models are trained, their predictions are combined in some way to make a final prediction. This can be done by averaging the predictions, taking a vote among the models, or using more sophisticated techniques.
+
+<sub>Improved Performance: By combining the predictions of multiple models, ensemble methods aim to reduce the risk of overfitting and improve generalization performance. Each model may capture different aspects of the data or make different errors, and combining them can lead to better overall performance.</sub>
+
+Common ensemble techniques include
+
+<sub><b>Bagging (Bootstrap Aggregating):</b> In bagging, multiple models are trained on different bootstrap samples of the data (random samples with replacement), and their predictions are averaged to make the final prediction. Random Forest is an example of a bagging ensemble method.
+
+<sub><b>Boosting:</b> Boosting works by sequentially training multiple weak learners (models that perform slightly better than random chance) and focusing on the instances that are misclassified by previous models. Gradient Boosting Machines (GBMs) and AdaBoost are popular boosting algorithms.
+
+<sub><b>Voting:</b> In voting ensembles, multiple models (e.g., decision trees, logistic regression, support vector machines) make predictions independently, and the final prediction is determined by a majority vote or by averaging the predictions.
+
+
+<p align="center">
+Using Ensemble from SKLEARN <br/>
+<img src="https://i.imgur.com/LUvmVLs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+
+<p align="center">
+Applying Gridserach on hyperparameter n_estimators (Number of Forests)<br/>
+<img src="https://i.imgur.com/DB8KGFH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+
+<p align="center">
+Using the best number of Forests identify the Best Features and then retrain the model using Best Features:<br/>
+<img src="https://i.imgur.com/nhzkEGc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+
+<p align="center">
+Using Best Features and Again iterating for Best number of forests.:<br/>
+<img src="https://i.imgur.com/DF4piwC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+
+<p align="center">
+The Results:<br/>
+<img src="https://i.imgur.com/6Zci372.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+
+The Conclusion:
+
+<sub> In the case we are studying, we want to measures the proportion of actual positive instances (e.g., positive class) that are correctly identified by the classifier. Here the positive class is "Whether the Employee will Stay with the Company" we want to identify this more correctly. Hence we use Recall. In simpler terms, recall answers the question: "Out of all the positive instances in the dataset, how many did the model correctly identify as positive?" A high recall indicates that the model is effective at capturing most of the positive instances in the dataset.
+
+<sub> In our case, recall is 95.62% which means the model is predicting 95.6% more positive class. And reduce the false negative - Model incorrectly predicts that an employee will stay, but the employee actually leaves.
+
+
+
+
